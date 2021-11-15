@@ -12,10 +12,8 @@ let outputEl = document.querySelector('p')
 let myArray = [];
 
 function filteredItems(str){
-const inputData = document.querySelector('#input').value
-myArray.push(str)
-  myArray.forEach(() => { myArray[i] /2})
-  return myArray
-  
-}
+  const inputData = document.querySelector('#input').value
+  myArray.push(str)
+
   console.log(myArray)
+}
