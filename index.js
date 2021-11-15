@@ -17,3 +17,4 @@ function filteredItems(str){
 
   console.log(myArray)
 }
+console.log(filteredItems("1,2,3,4"))
