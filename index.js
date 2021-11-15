@@ -12,9 +12,19 @@ let outputEl = document.querySelector('p')
 let myArray = [];
 
 function filteredItems(str){
-  const inputData = document.querySelector('#input').value
+  //const inputData = document.querySelector('#input').value
   myArray.push(str)
+console.log(myArray)
+  let valInput = "";
+  for(let i = 0; i < myArray.length; i++) {
+      valInput += myArray[i];
+        const val = valInput.split('')
+         
 
-  console.log(myArray)
-}
-console.log(filteredItems("1,2,3,4"))
+
+        }
+  }
+
+ 
+
+console.log(filteredItems("hello" ))
