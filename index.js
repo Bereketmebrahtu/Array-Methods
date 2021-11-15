@@ -1,14 +1,13 @@
-let inputEl = document.querySelector('#input').value;
+let inputEl = document.querySelector('#input');
 let buttonEl = document.querySelector('button');
 let outputEl = document.querySelector('p')
 
-const array = [1,2,3,4]
-const sum = 0 
-
-function reducer(total, num) { 
-  return total + num
 
 
+function filteredItems() { 
+ const items = inputEl.filter(value => value /2)
+
+console.log(items)
 }
 
-//console.log(reducer(array), 2)
+outputEl.addEventListener("click", filteredItems)
