@@ -9,23 +9,16 @@ let outputEl = document.querySelector('p')
 //append data to array 
 // display data
 
-let myArray = [];
+let myArray = [,2,3,4]
 
-function filteredItems(str){
-  //const inputData = document.querySelector('#input').value
-  myArray.push(str)
-console.log(myArray)
-  let valInput = "";
-  for(let i = 0; i < myArray.length; i++) {
-      valInput += myArray[i];
-        const val = valInput.split('')
-     
-        
+function filteredItems(arr){
+  //const inputData = document.querySelector('#input').value;
+for(let i=0; i< myArray.length; i++) {
 
-        }
-
+  return arr % 2 === 0
+    
   }
+  }
+outputEl.innerHTML = myArray.filter(filteredItems)
 
- 
-
-console.log(filteredItems("1,2,3" ))
+console.log(filteredItems())
