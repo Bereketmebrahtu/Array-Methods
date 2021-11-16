@@ -9,21 +9,21 @@ let outputEl = document.querySelector('p')
 //append data to array 
 // display data
 
-let myArray = [];
 
-function filteredItems(str){
-  //const inputData = document.querySelector('#input').value
-    myArray.push(str)
-    console.log(myArray)
-    inputVal = ""
 
-    for(let i = 0; i< myArray.length; i++) {
-          inputVal = inputVal + myArray[i]
-         
+ 
+   
+  const filtered = arr => arr.filter(num => num % 2 == 0);
 
-    }
+  console.log(filtered([1,2,3))
+
+     
+      
+  
+
+   
    
   console.log(inputVal)
-} 
+
 
 filteredItems("1,2,3")
