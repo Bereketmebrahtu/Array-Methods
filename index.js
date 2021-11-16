@@ -19,12 +19,13 @@ console.log(myArray)
   for(let i = 0; i < myArray.length; i++) {
       valInput += myArray[i];
         const val = valInput.split('')
-         
-
+        myArray.push(valInput)
+        console.log(myArray)
 
         }
+
   }
 
  
 
-console.log(filteredItems("hello" ))
+console.log(filteredItems("1,2,3" ))
