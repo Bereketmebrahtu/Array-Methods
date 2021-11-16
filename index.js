@@ -20,7 +20,7 @@ console.log(myArray)
       valInput += myArray[i];
         const val = valInput.split('')
         myArray.push(valInput)
-        console.log(myArray)
+        
 
         }
 
