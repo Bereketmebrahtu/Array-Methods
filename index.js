@@ -9,24 +9,19 @@ let outputEl = document.querySelector('p')
 //append data to array 
 // display data
 
-
-
-
-
+let num = inputEl.value % 2  == 0
+const filteredItems = (num) => num % 2  == 0
   
-function filteredItems() {
-  let num = inputEl.value
-  
- if(num % 2 == 0) {
-   return num
- }
+ console.log(num)
+
+  document.querySelector('p').innerHTML = num
  
-   document.querySelector('p').innerHTML = num
-}
+ 
+
+
 buttonEl.addEventListener("click", filteredItems)
 
-console.log(filteredItems())
-     
+
       
   
 
