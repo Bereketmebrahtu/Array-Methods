@@ -12,12 +12,20 @@ let outputEl = document.querySelector('p')
 
 
 
+
+  
+function filteredItems() {
+  let num = inputEl.value
+  
+ if(num % 2 == 0) {
+   return num
+ }
  
-   
-  const filtered = arr => arr.filter(num => num % 2 == 0);
+   document.querySelector('p').innerHTML = num
+}
+buttonEl.addEventListener("click", filteredItems)
 
-  console.log(filtered([1,2,3])
-
+console.log(filteredItems())
      
       
   
