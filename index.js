@@ -12,7 +12,7 @@ let outputEl = document.querySelector('p')
 let num = inputEl.value % 2  == 0
 const filteredItems = (num) => num % 2  == 0
   
- console.log(num)
+ 
 
   document.querySelector('p').innerHTML = num
  
