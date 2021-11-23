@@ -13,14 +13,29 @@ const inputEl = document.querySelector('#input');
 const outputEl = document.querySelector('p')
 const buttonEl = document.querySelector('button')
 const inputText = inputEl.value
-console.log(inputText)
+
 const myArray = [];
-  buttonEl.addEventListener('click', () => {
-    let filteredItems = inputText.split(',').filter(values=> {
-      return values % 2 === 0;
-      
-    })  
-  })
+  
+function filteredItems() {
+  
+  let filtered = inputText.split(',').filter(inputText => {
+    if(inputText % 2 == 0) {
+      return inputText
+    }
+    myArray.push(inputText)
+    return myArray
+  } )
+         
+  outputEl.innerHTML = myArray
+    
+
+    }
+console.log(myArray)
+
+  buttonEl.addEventListener('click', filteredItems)
+filteredItems()
+
+  
  
     
   
