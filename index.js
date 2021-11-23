@@ -1,47 +1,41 @@
-let inputEl = document.querySelector('#input');
-let buttonEl = document.querySelector('button');
-let outputEl = document.querySelector('p')
+// The input should be given in the first input box as a string. The user should be able to enter numbers, separated by commas. In JavaScript, you'll convert this string to an array of numbers. 
+
+// Based on which radio button is selected, choose which function to run. Pass an array as an argument to the particular function. 
+
+// Finally, return the result from the function and display it on the page. 
+
+// 5️⃣ Add CSS to give the user an intuitive experience
+
+// 6️⃣ Think about and constrain what inputs can be given. The user may be inconsistent in the string they give, for example using spaces or not. How can we account for this, in JavaScript or HTML?
 
 
-//create an array variable 
-//grap input data from user 
-//write function 
-//append data to array 
-// display data
-function outputter () {
-  const myArray = []
-  inputEl = Array.from(inputEl).value
-  //console.log(input)
-  const mappedItems = Array.prototype.map(inputEl => { 
-    return inputEl.value   
+const inputEl = document.querySelector('#input');
+const outputEl = document.querySelector('p')
+const buttonEl = document.querySelector('button')
+const inputText = inputEl.value
+console.log(inputText)
+const myArray = [];
+  buttonEl.addEventListener('click', () => {
+    let filteredItems = inputText.split(',').filter(values=> {
+      return values % 2 === 0;
+      
+    })  
   })
-  filteredItems = mappedItems.filter(values => {
-   values.forEach(value => {
-    myArray.push(value)
-         return myArray
-   }) 
-   
-    })
-    if(filteredItems) {
-      outputEl.innerHTML = myArray
-    }
+ 
     
-}
   
-  buttonEl.addEventListener("click", outputter)
+   
+    
+// buttonEl.addEventListener('click',() => {
+//   let result = inputEl.split(',').forEach(values => {
+//     return values.filter(value => {
+//       return value % 2 ===0
+//     })
+//     return result
+//   })
+// })
 
-//console.log(filteredItems)
+
+
 
   
-
-  
-
- 
-  
-  
- 
-
-  
-
-
-
