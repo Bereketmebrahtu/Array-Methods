@@ -18,7 +18,7 @@ const buttonEl = document.querySelector('button')
   
 function filteredItems() {
 
-  const inputText = inputEl.value
+  const inputText = inputEl.value.trim()
 
   let filtered = inputText.split(',').filter(inputText => {
     if(inputText % 2 == 0) {
