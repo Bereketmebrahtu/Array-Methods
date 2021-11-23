@@ -9,46 +9,46 @@
 // 6️⃣ Think about and constrain what inputs can be given. The user may be inconsistent in the string they give, for example using spaces or not. How can we account for this, in JavaScript or HTML?
 
 
-const inputEl = document.querySelector('#input');
+const inputEl = document.querySelector('#filter');
 const outputEl = document.querySelector('p')
 const buttonEl = document.querySelector('button')
-const inputText = inputEl.value
 
-const myArray = [];
+
+
   
 function filteredItems() {
-  
+
+  const inputText = inputEl.value
+
   let filtered = inputText.split(',').filter(inputText => {
     if(inputText % 2 == 0) {
-      return inputText
+       return inputText
+       
     }
-    myArray.push(inputText)
-    return myArray
-  } )
+  })
          
-  outputEl.innerHTML = myArray
-    
+  outputEl.innerHTML = filtered
 
-    }
-console.log(myArray)
-
+  }
   buttonEl.addEventListener('click', filteredItems)
-filteredItems()
+
+
+
+//   function sumOfItems(previous, next){
+//     let sum = inputEl.reduce(previous, next => previous + next)
+//   }
+
+
+    
+  
+// buttonEl.addEventListener('click', sumOfItems)
 
   
  
     
   
    
-    
-// buttonEl.addEventListener('click',() => {
-//   let result = inputEl.split(',').forEach(values => {
-//     return values.filter(value => {
-//       return value % 2 ===0
-//     })
-//     return result
-//   })
-// })
+
 
 
 
