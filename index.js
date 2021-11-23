@@ -16,32 +16,32 @@ const buttonEl = document.querySelector('button')
 
 
   
-function filteredItems() {
+// function filteredItems() {
 
-  const inputText = inputEl.value.trim()
+//   const inputText = inputEl.value.trim()
 
-  let filtered = inputText.split(',').filter(inputText => {
-    if(inputText % 2 == 0) {
-       return inputText
+//   let filtered = inputText.split(',').filter(inputText => {
+//     if(inputText % 2 == 0) {
+//        return inputText
        
-    }
-  })
+//     }
+//   })
          
-  outputEl.innerHTML = filtered
+//   outputEl.innerHTML = filtered
 
-  }
-  buttonEl.addEventListener('click', filteredItems)
-
-
-
-//   function sumOfItems(previous, next){
-//     let sum = inputEl.reduce(previous, next => previous + next)
 //   }
+//   buttonEl.addEventListener('click', filteredItems)
 
+
+
+ 
 
     
   
-// buttonEl.addEventListener('click', sumOfItems)
+buttonEl.addEventListener('click', ()=> {
+  const inputText = inputEl.value.trim()
+  return inputText.reduce()
+})
 
   
  
